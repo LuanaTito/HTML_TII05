@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,28 +9,23 @@
         body {
             background-color: pink;
         }
-
-        .tudo {
+        .tudo{
             overflow: auto;
         }
-
-        #texto {
+        #texto{
             margin-left: 4px;
         }
-
-        #list {
+        #list{
             float: none;
             width: auto;
         }
-
-        #menulist {
+        #menulist{
             margin: 0;
             padding: 0;
         }
-
-        .menuitem {
-            background: #CDF0F6;
-            border: 1px solid #d4d4d4;
+        .menuitem{
+            background-color: #CDF0F6;
+            border: solid 1px #d4d4d4;
             border-radius: 4px;
             list-style-type: none;
             margin: 4px;
@@ -38,54 +33,45 @@
             text-align: center;
         }
 
-
- 
-        .topnav {
-            overflow: hidden; /*conteúdo visível ficar dentro da "caixa"*/
+        .topnav{
+            overflow: hidden; 
             background-color: #333;
         }
-
-  
         .topnav a {
             float: left;
-            display: block; /*precisa estar em display block*/
+            display: block;
             color: #f2f2f2;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
-
-     
-        .topnav a:hover {
+        .topnav a:hover{
             background-color: #ddd;
             color: black;
         }
 
-
-        @media screen and (min-width: 480px) {
-
-            /*se for maior que 480. ---->> max-width menor que*/
+        @media screen and (min-width:480px) {
             body {
-                background-color: lightgreen;
+                background-color: rgb(69, 199, 3);
             }
-
-            #list {
+            #list{
                 width: 200px;
                 float: left;
             }
+         #texto{
+            margin-left: 220px;
+         }
 
-            #texto {
-                margin-left: 216px;
-            }
         }
+@media screen and (max-width: 600px){
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+    /* Quando uso o min-width, a unidade de medida colocada a partir de: ...
+    Quando uso o max-width, a unidade de medida colocada menor que.. */
+}
 
-        @media screen and (max-width: 600px) {
-            .topnav a {
-                float: none;
-                width: 100%;
-      
-            }
-        }
     </style>
 </head>
 
@@ -118,14 +104,15 @@
 
         <div id="texto">
             <h1>Conteúdo de quebra</h1>
-            <p>Quando determinamos as medidas em pixel das orientações de páginas, estamos falando dos chamados "breakpoints"</p>
+            <p>Quando determinamos as medidas em pixel das orientações de páginas, estamos falando dos chamados
+                "breakpoints"</p>
         </div>
     </div>
 
     <p>MENU</p>
     <div class="topnav">
         <a href="#">HOME</a>
-        <a href="#">MENU</a>   
+        <a href="#">MENU</a>
         <a href="#">CONTATO</a>
     </div>
 
